@@ -1,0 +1,26 @@
+// Variable Declarations
+int counter = 100;        
+decimal value = 123.45678;  // Should trigger an error (more than 5 decimal places)
+bool flag = true;          
+char letter = 'a';         
+
+// Arithmetic Operations
+int sum = counter + 50;     
+int diff = counter - 30;    
+decimal prod = value * 2;   
+decimal quot = value / 2;   
+int modResult = counter % 3;
+int powerint = 2^3;         // Should be evaluated as 8
+decimal powerDec = value^2; // Should be evaluated properly
+
+// Spacing Handling
+   int    spaced    =     42   ;  // Extra spaces should be ignored
+
+/*
+    This is a multi-line comment.
+    It includes extra spaces, blank lines, and even symbols.
+    The lexer should properly ignore all of this.
+*/
+
+// Identifier Naming Rule Violation
+int Invalid = 5;  // Should trigger an error (uppercase letter in identifier)
